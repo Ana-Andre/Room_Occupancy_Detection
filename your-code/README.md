@@ -40,7 +40,7 @@ It results from an experiment that monotorized 4 environmental measures over tim
 20560 instances for each feature.
 There is also a label feature to specify the room occupation (1 for occupied, 0 for non-occupied)
 
-[Dataset](https://machinelearningmastery.com/how-to-predict-room-occupancy-based-on-environmental-factors/)
+[Dataset](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+#/)
 
 <a name="workflow"></a>
 
@@ -59,4 +59,4 @@ There is also a label feature to specify the room occupation (1 for occupied, 0 
 [Repository](https://github.com/Ana-Andre/supervised-learning-project)  
 [Presentation](https://bit.ly/2orZj8z)  
 [Trello](https://trello.com/b/2WM1FlgO/project-6)  
-[Dataset](https://machinelearningmastery.com/how-to-predict-room-occupancy-based-on-environmental-factors/)
+[Dataset](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+#)
