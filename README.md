@@ -1,88 +1,62 @@
-![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
+<img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Supervised Learning Project
+# Room Occupancy Detection
 
-## Overview
+Ana André
 
-There are many interesting use cases for Supervised Machine Learning. To name a few: prediction of the effectiveness of medical treatments, prediction of the exchange rates of foreign currencies, diagnosing Parkinson's disease just by listening to the voice of a patient, face recognition, recommendation of the news that are expected to be most interesting to a given user, etc. Choose one that motivates you and implement a solution using a Supervised Machine Learning algorithm of your choice.
+Data Squad 21, Lisbon 30.09.2019
 
-## External Interface Requirements
+## Content
+- [Project Description](#project-description)
+- [Motivation](#motivation)
+- [Dataset](#dataset)
+- [Workflow](#workflow)
+- [Links](#links)
 
-1. Input requirement: capacity to read a dataset stored on disk.
-2. Output requirement: report quality metrics of the Machine Learning model.
-3. Output requirement: output estimations corresponding to test instances.
+<a name="project-description"></a>
 
-## Functional Requirements
+## Project Description
 
-1. The software must be able to learn a model from a supervised dataset.
-2. The software must be able to use the learned model to estimate the target value of problem instances.
-3. The software must be able to compute a quality metric of the learned model.
+For this project I put myself on the shoes of a data analyst working for a building facilities management company and I did a supervised machine learning for room occupancy detection to improve the algorithm of the HVAC control systems.
 
-## Technical Requirements
+<a name="motivation"></a>
 
-1. Use Python as programming language.
-2. Use Pandas for reading the dataset into a pandas dataframe.
-3. Use Scikit-learn for training and testing the Machine Learning model.
+## Motivation
 
-## Necessary Deliverables
+Energy efficiency in buildings has been a hot topic for quite a while now both for sustainability and cost reasons.
+Literature states that the accurate determination of room occupancy detection can lead to energy savings up to 30 to 40 % which can mean a lot in terms of money and CO2 emitions.
+So designing smart buildings, buildings able to adjust to user's needs in real time, is the path we want to follow.
 
-1. Github repo: it's gonna contain your presentation, README (including a link to your Trello board), and your Jupyter notebooks.
-2. Report containing quality metrics, and explanation of the dataset, and the experimental procedure (whether a single split was performed, or cross-validation, etc.).
+<a name="dataset"></a>
 
-## Suggestions to Get Started
-1. Find an interesting dataset! Look in the Useful Resources section for sources of ideas.
-2. Break down the project into smaller tasks, for instance: importing the dataset, training, etc.
-3. Decide whether you will create a single Python application or several Python applications.
+## Dataset
 
-## What to Do When Feeling Stuck
-If you get stuck at some stage of the project, and you cannot find a way out, you can try this:
-1. Nothing you are asked to do in this project is new, you have examples of all the ingredients you need in the previous lessons. Go back to the previous lessons and review the procedure used there to move on.
-2. Think at a level higher than the details of the problem, at the methodology level, and identify on what stage of the methodology you are stuck, and rephrase for yourself the reason why you are stuck, and why the solutions presented in the examples of the previous lessons are not helping you to find a solution.
-3. Check with your peers whether they got stuck at the same point, and what they did to move on.
-4. Consult with your instructor.
+I got my dataset from the University of California's repository for machine learning.
+It results from an experiment that monotorized 4 environmental measures over time:
+- temperature
+- humidity
+- light
+- CO2 concentration.
+20560 instances for each feature.
+There is also a label feature to specify the room occupation (1 for occupied, 0 for non-occupied)
 
-<a name="schedule"></a>
+[Dataset](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+#/)
 
-## Schedule
-*Tuesday-Wednesday 16:59h*
-* Think about a topic and propose some questions. 
-* Choose data that is relevant to your questions. 
-* Look for documentation to give context to your project.
-* Write the README file in your repository.
-* **DO NOT START CODING**
+<a name="workflow"></a>
 
+## Workflow
 
-**NO CODE UNTIL HERE**
+1. Collect the data
+2. Explore the data
+3. Train and test the models
+4. Evaluate the models
+5. Results
 
-*Wednesday 17:00h*
-* Mock presentation. 
+<a name="links"></a>
 
-*Thursday-Friday*
-* Pre analysis of the data and machine learning. 
-* Train and evaluate different models.
-* Prepare a draft of your first slides presentation (no analysis or conclusions yet): title, motivation, context, ...
+## Links
 
-*Monday 9:30h*
-* Mock presentation. Take the feedback and use it!
-
-*Monday and Tuesday*
-* Improve your model. 
-* Finish the analysis. Finish the slides.
-
-*Tuesday 17:00h*
-* Mock presentation. Take the feedback and use it!
-
-*Wednesday morning*
-* Presentation!
-
-<a name="presentation"></a>
-
-## Presentation  
-Presentations for this project will be in the classroom! Presentations will be **EXACTLY** 5 minutes long, with 2 additional minutes for questions. We will stop you!  
-After the presentations, the audience will evaluate you by indicating how well they understood what you were trying to present and how you presented it. This information will help you in further presentations!
-
-## Useful Resources
-* University of California at Irvine's [Machine Learning Repository](https://archive.ics.uci.edu/ml)
-* OpenML [datasets](https://www.openml.org)
-* Kaggle [datasets](https://www.kaggle.com/datasets)
-
+[Repository](https://github.com/Ana-Andre/supervised-learning-project)  
+[Presentation](https://bit.ly/2orZj8z)  
+[Trello](https://trello.com/b/2WM1FlgO/project-6)  
+[Dataset](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+#)
